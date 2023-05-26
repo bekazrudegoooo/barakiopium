@@ -1,0 +1,77 @@
+body {
+    background-color: black;
+    background-image: url(bcg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lato',sans-serif;
+}
+header {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin-left: 15%;
+}
+.menu {
+    color: white;
+    font-size: 2vw;
+    margin-top: 1.5vh;
+}
+.menu:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.5s;
+}
+#quote-of-the-day {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
+}
+#scam-video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+#scam-info {
+    position: fixed;
+    width: 40%;
+    height: 40vw;
+    background-image: url(cartiuwu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 5vw;
+    left: 30vw;
+    border-radius: 5vw;
+    display: none;
+    grid-template-rows: auto auto;
+}
+#scam-info span {
+    width: 4vw;
+    position: absolute;
+    font-size: 5vw;
+    top: 1.5vw;
+    right: 1.5vw;
+    z-index: 3;
+}
+#scam-info span:hover {
+    font-size: 6vw;
+}
+#scam-info p {
+    font-size: 5vw;
+    text-align: center;
+    font-weight: 700;
+    color: red;
+    animation-name: epi;
+    animation-duration: 100ms;
+    animation-iteration-count: infinite;
+    margin-top: 3vw;
+    z-index: 1;
+    position: absolute;
+}
+@keyframes epi {
+    0% {color: red;}
+    50% {color: red;}
+    51% {color: rgb(65, 0, 0);}
+    100% {color: rgb(65, 0, 0);}
+}
